@@ -111,16 +111,21 @@ a {
 }
 
 .navbar__link,
-.action__log-in {
+.header-action__log-in {
     padding: 4px 21px;
     font-size: 1.6rem;
     font-weight: 300;
     color: #c9d2da;
 }
 
+.header-action__log-in {
+    margin-right: 7px;
+}
+
 .navbar__link--active,
-.navbar__link:hover, .action__log-in:hover {
-    text-shadow: 1px 0 0 currentColor;
+.navbar__link:hover,
+.header-action__log-in:hover {
+    text-shadow: 1px 0 0 currentColor; /*khong bi lech*/
     color: #fff;
 }
 
@@ -136,9 +141,77 @@ a {
     background: #fff;
 }
 
-.action__sign-up {
+.header-action__sign-up {
     padding: 0 20px;
     --height: 44px;
     line-height: var(--height);
     min-width: 104px;
+}
+
+.hero {
+    margin-top: 76px;
+    display: flex;
+    align-items: center;
+}
+
+.hero__content {
+    width: 44%;
+    flex-shrink: 0;
+}
+
+.hero__heading {
+    font-weight: 600;
+    font-size: 7rem;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.hero__desc {
+    margin-top: 22px;
+    font-weight: 300;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #c9d2da;
+}
+
+.hero__row {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.hero__phone {
+    margin-left: 38px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #ffffff;
+}
+
+.hero__media {
+    flex-grow: 1;
+}
+
+.hero__images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.hero__img {
+    width: 330px;
+    height: 540px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero__img:first-child{
+    margin-right: -6px;
+    z-index: 1;
+}
+
+.hero__img:last-child {
+    width: 210px;
+    height: 410px;
+    z-index: 0;
 }
